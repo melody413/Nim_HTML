@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="outer__header">
+				<div class="logo">
+					<a href="#">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#" >home</a></li>
+						<li class='spacer'>|</li>
+						<li><a href="#" c>about us</a> </li>
+						<li class='spacer'>|</li>
+						<li><a href="#" >NIM</a></li>
+						<li class='spacer'>|</li>
+						<li><a href="#">report</a></li>
+						<li class='spacer'>|</li>
+						<li><a href="#" class="current">contatti</a></li>
+					</ul>
+				</div>
+				<div class="right__part">
+					<div class="initiate">
+						<span>iniziativa di  </span>
+						<a href="#"><img src="img/secondlogo.svg" alt="secondlogo"></a>
+						<div class="powered">
+							<p>powered by </p>
+							<span><img src="img/poweredimage.png" alt="powered"></span>
+						</div>
+					</div>
+					<div class="menu__button">
+						<a href="#">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="main__info">
+		<div class="container">
+			<div class="outer__main long">
+				<h6>contatti</h6>
+			</div>
+		</div>
+	</div>
+	<div class="contact__map">
+		<div class="container">
+			<div class="outer__map">
+				<div class="top__map">
+					<span><img src="img/logo.svg" alt="loog"></span>
+					<div class="desc">
+						<h6>NIM</h6>
+						<p>Piazza Luigi da Porto, 20, 35131 - Padova (Italy)</p>
+						<ul>
+							<li><span><img src='img/contact1.svg' alt="contact"></span>  <a href="+390498061101">+39 049 8061101</a></li>
+							<li><span><img src='img/contact2.svg' alt="contact"></span> <a href="www.nimosservatorio.it" target="_blank">www.nimosservatorio.it</a></li>
+							<li><span><img src='img/contact3.svg' alt="contact"></span> <a href="mailto:nim@galileovd.it">nim@galileovd.it</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="map">
+					<div id="map"></div>
+					<!-- <script async
+					    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA06214Q1BGwbtkbbgA0FyiWXMXittN6MU&callback=initMap">
+					</script> -->
+					<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+				        <script>
+				        	/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+// Initialize and add the map
+let map;
+
+async function initMap() {
+  // The location of Uluru
+  const position = { lat: -25.344, lng: 131.031 };
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 9,
+    center: position,
+    mapId: "map",
+  });
+
+  // The marker, positioned at Uluru
+  const beachMarker = new google.maps.Marker({
+    position: { lat: -25.344, lng: 131.031 },
+    map,
+    icon: 'img/marker.svg',
+  });
+}
+
+initMap();
+
+				        </script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact__form">
+		<div class="container">
+			<div class="outer__contact">
+				<form action="">
+					<h6>LASCIACI UN MESSAGGIO</h6>
+					<p>Vuoi approfondire tematiche di innovazione ed i trend del momento, vuoi un supporto per accedere alla piattaforma, 
+					vuoi entrare in contatto con startup innovative del nostro territorio?</p>
+					<p><span class="bold">Scrivici per organizzare una call conoscitiva</span></p>
+					<div class="fields">
+						<div class="group__input">
+							<input type="text" placeholder="Il mio nome è">
+						</div>
+						<div class="group__input">
+							<input type="text" placeholder="Lavoro per">
+						</div>
+						<div class="group__input">
+							<input type="text" placeholder="E-mail">
+						</div>
+						<div class="group__input">
+							<input type="text" placeholder="Telefono">
+						</div>
+						<div class="group__input">
+							<textarea name="" placeholder="Messaggio" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div class="group__checkbox">
+							<label class="container__check">
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+														                Dichiaro di aver letto e compreso l’informativa privacy. Sono altresì consapevole che il Parco Scientifico e Tecnologico Galileo S.c.p.A. tratterà i miei dati al fine di inviarmi offerte per eventuali posizioni lavorative 
+								e per effettuare procedure di selezione del personale per posizioni in linea con quelle di mio interesse. I dati personali non saranno oggetto di diffusione e non verranno comunicati a soggetti indeterminati. 
+								I dati personali sono conservati per un anno dal momento dell’invio della candidatura, salvo che venga manifestata l’opposizione al trattamento prima di tale termine. 
+								Per quanto riguarda le modalità del trattamento, i destinatari dei dati, i diritti dell’interessato, la possibilità di proporre reclamo ed i riferimenti del DPO, si veda l’informativa privacy completa.
+							</label>
+						</div>
+						<div class="group__submit">
+							<button type="submit">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="top__footer">
+			<div class="container">
+				<div class="outer__top">
+					<div class="elem__foot">
+						<a href="#">
+							<img src="img/logofoot1.svg" alt="logofoot">
+						</a>
+						<div class="double__socials">
+							<ul>
+								<li><a href="mailto:nim@galileovd.it">nim@galileovd.it</a></li>
+								<li><a href="www.nimosservatorio.it" target='_blank'>www.nimosservatorio.it</a></li>
+							</ul>
+							<div class="socials">
+								<ul>
+									<li><a href="#"><img src="img/social1.svg" alt="social"></a></li>
+									<li><a href="#"><img src="img/social2.svg" alt="social"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="elem__foot">
+						<a href="#">
+							<img src="img/logofoot2.png" alt="logofoot" style="max-height: 56px;">
+						</a>
+						<p>iniziativa di Galileo Visionary District <br>powered by InfoCamere Scpa</p>
+					</div>
+					<div class="elem__foot row">
+						<a href="#">
+							<img src="img/logofoot3.svg" alt="logofoot">
+						</a>
+						<div class="desc">
+							<p>Galileo Visionary District Scpa</p>
+							<span>Tel.: +39 049 8705973 - Fax: +39 049 8591380 <br>
+							Piazza Luigi da Porto, 20 35131 - Padova (Italy) <br>
+							P. Iva / Cod. fisc. 01404710285</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom__footer">
+			<div class="container">
+				<div class="outer__bottom">
+					<ul>
+						<li>2016-2023 Parco Scientifico e Tecnologico Galileo s.c.p.a. P. Iva / Cod. fisc. 01404710285</li>
+						<li class="spacer">|</li>
+						<li><a href="#"> Privacy Police</a></li>
+						<li class="spacer">|</li>
+						<li><a href="#">Cookie  Policy</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
